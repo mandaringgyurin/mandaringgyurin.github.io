@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css</title>
+        <meta charset="utf-8" />
+        <style>
+            body{ color:brown; }
+            #div1{ color:#1900ff; }
+            /* css의 주석 */            
+        </style>
+        <!-- html의 주석 -->
+    </head>
+    <body>
+        <div id="div1">상속과 겹침</div>
+        
+        <style>
+            div{ background-color: hsl(73, 100%, 84%);
+                border: solid 1px;
+            }
+            #w1{
+                width: 200px;
+                height: 150px;
+                background-color: antiquewhite;
+                
+            }
+        </style>
+        <div>default</div>
+        <div id="w1">width</div>
+        <style>
+            #p1{
+                padding: 20px;
+            }
+        </style>
+        <div id="p1"> padding </div>
+
+        <style>
+            #m1{
+                margin: 20px;
+            }
+        </style>
+        <div id="m1">margin</div>
+
+        <style>
+            *{ text-decoration: underline; }
+            strong{ /* element selector 요소 선택자 */
+                color: green;
+            }
+            em{
+                color: coral;
+            }
+        </style>
+        <strong>strong</strong>
+        <em>em</em>
+       
+        <style>
+            .cl{
+                color: rgb(255, 0, 255);
+            }
+            #dl{
+                color: #558000;
+            }
+        </style>
+        <div class="cl">class selector</div>
+        <div id="dl">id selector</div>
+
+        <style>
+            #f1:first-line{
+                color: palevioletred
+            }
+            #f1:first-letter{
+                font-size: 40px;
+            }
+            #f1::before{ content:"시작"; }
+            #f1::after{ content:"끝";} 
+        </style>
+        <div id="f1">first line, first letterfirst line, first letterfirst line, first letterfirst line, first letterfirst line,
+             first letterfirst line, first letterfirst line, first letterfirst line, first letterfirst line, first letterfirst line,
+              first letterfirst line, first letterfirst line, first letterfirst line, first letter</div>
+    </body>
+</html>
