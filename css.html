@@ -20,7 +20,7 @@
             #w1{
                 width: 200px;
                 height: 150px;
-                background-color: antiquewhite;
+                background-color: rgb(255, 0, 0);
                 
             }
         </style>
@@ -75,6 +75,62 @@
         </style>
         <div id="f1">first line, first letterfirst line, first letterfirst line, first letterfirst line, first letterfirst line,
              first letterfirst line, first letterfirst line, first letterfirst line, first letterfirst line, first letterfirst line,
-              first letterfirst line, first letterfirst line, first letterfirst line, first letter</div>
+              first letterfirst line, first letterfirst line, first letterfirst line, first letter
+        </div>
+
+        <style>
+            #d2 div:first-child{
+                color:#43b600;
+            }
+            #d2 div:nth-child(2){
+                color:#558000;
+            }
+            #d2 div:last-child{
+                color:aqua;
+            }
+        </style>
+        <div id="d2">
+            <div>first child</div>
+            <div>middle child</div>
+            <div>last child</div>
+        </div>
+        <style>
+            /* :link, :visited. :hover, :active, :focus */
+            a:link{ color:red; }/*링크가 있을때*/
+            a:visited{ color:green; }/*방문한 후*/
+            a:hover{ color:blue; }/*마우스를 올리면*/
+            a:active{ color: blueviolet; }/*클릭하면*/
+            a:focus{ color: darksalmon; }/*포커스 되면*/
+            a{ text-decoration: none;}
+        </style>
+
+        <a href="https://www.naver.com/"target="_blank" title="Naver">네이버</a>
+
+        <style>
+            #d3>span{ /*자식 요소 선택자*/
+                font-size: 50px;
+            }
+            #d3 span{ /*하위 요소 선택자*/
+                text-decoration: line-through;
+            }
+            #d3>div>span{
+                background-color: #678fff;
+            }
+        </style>
+        <div id="d3">
+            <span>span1</span>
+            <div>
+                <span>span2</span>
+            </div>
+        </div>
+
+        <style>
+            /* widtn, height, margin, border, padding */
+            #d4{
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+        <div id="d4">div4</div>
     </body>
 </html>
