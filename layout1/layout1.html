@@ -3,6 +3,52 @@
     <head>
         <title>layout1</title>
         <meta charset="utf-8"/>
+        <style>
+            #wrap ul{}
+            #wrap>header>ul{}
+            header ul{
+                list-style: none;
+                display: flex;
+                padding: 0px;
+            }
+            header li{
+                padding: 0px 10px; /*상하 좌우*/
+                border-right: solid 1px gray;
+            }
+            header li:last-child{
+                border: none
+            }
+            header{
+                display: flex;
+                justify-content: space-between;
+            }
+            header h1{
+                margin: 0px
+            }
+            header img{
+                display: block;
+            }
+            header>div>img{
+                margin: 10px 0px;
+            }
+            nav ul{
+                list-style: none;
+                display: flex;
+                padding 0px;
+            }
+            nav li{
+                padding: 0px 10px;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+                background-color: lightgray;
+            }
+            nav h2{
+                margin: 9px 0px;
+            }
+        
+        </style>
     </head>
     <body>
         <div id="wrap">
@@ -15,11 +61,49 @@
                     <li>BLOG</li>
                     <li>CONTACT US</li>
                 </ul>
-                <img src="logo2.png"/>
+                <div>
+                    <img src="logo2.png"/>
+                </div>
             </header>
             
-            <nav>navigation</nav>
-            <div id="content">content</div>
+            <nav>
+                <h2>See Our Works</h2>
+                <ul>
+                    <li>web designs</li>
+                    <li>web designs</li>
+                    <li>web designs</li>
+                    <li>web designs</li>
+                </ul>
+                <div></div>
+            </nav>
+            <div id="content">
+                <section>
+                    <h3>Web Design</h3>
+                    <div>
+                        <div>
+                            <img src ="img.png" />
+                            <dl>
+                                <dt>
+                                    프로젝트 제목
+                                </dt>
+                                <dd>
+                                    프로젝트 내용
+                                </dd>
+                            </dl>
+                            <img src ="img2.png" />
+                            <dl>
+                                <dt>
+                                    프로젝트 제목
+                                </dt>
+                                <dd>
+                                    프로젝트 내용
+                                </dd>
+                            </dl>
+                        </div>
+                        <div></div>
+                    </div>
+                </section>
+            </div>
             <footer>footer</footer>
         </div>
     </body>
