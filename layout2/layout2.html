@@ -4,11 +4,17 @@
         <title>layout2</title>
         <meta charset="utf-8"/>
         <style>
+            #wrap{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin: 0px auto;
+            }
             header{
                 display: flex;
                 justify-content: space-between;
                 background-color: rgb(97, 190, 175);
                 color: white;
+                padding: 10px 50px;
             }
             header ul{
                 list-style: none; /* 리스트 모양: 없음 */
@@ -43,6 +49,60 @@
                 font-size: 50px;
                 letter-spacing: 15px;
             }
+            .button{
+                background-color: #ffae00;
+                dispaly:inline-block;
+                padding: 20px 50px;
+                margin-top: 150px;
+            }
+            section{
+                text-align: center;
+                color: gray;
+            }
+            section h3{
+                font-size: 30px;
+                color: #00c7ac;
+            }
+            #content1{
+                padding: 80px;
+            }
+            #content1 ul{
+                display: flex;
+                list-style: none;
+                padding: 0px;
+                justify-content: stretch;
+                margin-top: 100px;
+            }
+            #content1 li{
+                border-right: solid 1px lightgray;
+                padding: 40px;
+            }
+            #content1 li:last-child{
+                border: none;
+            }
+            #content1 dt{
+                font-size: 19px;
+                font-weight: bold;
+                margin: 20px;
+            }
+            #content1 dd{
+                margin: 0px;
+            }
+            #content2 ul{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                list-style: none;
+                padding: 0px;
+                margin-top: 150px;
+            }
+            #content2 li{
+                width: 25%; /* li를 1/4크기로 */
+            }
+            #content2 img{
+                width: 100%; /* 가능한 최대크기 */
+                display: block;
+            }
         </style>
     </head>
     <body>
@@ -61,18 +121,82 @@
                 <p>Lorem ipsum dolor sit iusmod tempor</p>
                 <h2>incididunt bore</h2>
                 <p>Orem ipsum dolor sit amet, consectetur</p>
-                <img src="">
+                <div class="button">KNOW MORE</div>
             </div>
-            <section>
+            <section id="content1">
                 <h3>ABOUT ME</h3>
                 <p>
-                    미안하다 이거 보여주려고 어그로끌었다.. 나루토 사스케 싸움수준 ㄹㅇ실화냐? 진짜 세계관최강자들의 싸움이다.. 그찐따같던 나루토가 맞나? 진짜 나루토는 전설이다..진짜옛날에 맨날나루토봘는데 왕같은존재인 호카게 되서 세계최강 전설적인 영웅이된나루토보면 진짜내가다 감격스럽고 나루토 노래부터 명장면까지 가슴울리는장면들이 뇌리에 스치면서 가슴이 웅장해진다.. 그리고 극장판 에 카카시앞에 운석날라오는 거대한 걸 사스케가 갑자기 순식간에 나타나서 부숴버리곤 개간지나게 나루토가 없다면 마을을 지킬 자는 나밖에 없다 라며 바람처럼 사라진장면은 진짜 나루토처음부터 본사람이면 안울수가없더라 진짜 너무 감격스럽고 보루토를 최근에 알았는데 미안하다.. 지금20화보는데 진짜 나루토세대나와서 너무 감격스럽고 모두어엿하게 큰거보니 내가 다 뭔가 알수없는 추억이라해야되나 그런감정이 이상하게 얽혀있다.. 시노는 말이많아진거같다 좋은선생이고..그리고 보루토왜욕하냐 귀여운데 나루토를보는것같다 성격도 닮았어 그리고버루토에 나루토사스케 둘이싸워도 이기는 신같은존재 나온다는게 사실임?? 그리고인터닛에 쳐봣는디 이거 ㄹㅇㄹㅇ 진짜팩트냐?? 저적이 보루토에 나오는 신급괴물임?ㅡ 나루토사스케 합체한거봐라 진짜 ㅆㅂ 이거보고 개충격먹어가지고 와 소리 저절로 나오더라 ;; 진짜 저건 개오지는데.. 저게 ㄹㅇ이면 진짜 꼭봐야돼 진짜 세계도 파괴시키는거아니야 .. 와 진짜 나루토사스케가 저렇게 되다니 진짜 눈물나려고했다.. 버루토그라서 계속보는중인데 저거 ㄹㅇ이냐..? 하.. ㅆㅂ 사스케 보고싶다..  진짜언제 이렇게 신급 최강들이 되었을까 옛날생각나고 나 중딩때생각나고 뭔가 슬프기도하고 좋기도하고 감격도하고 여러가지감정이 복잡하네.. 아무튼 나루토는 진짜 애니중최거명작임..
+                    아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아
+                    아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아
+                    아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아
+                    아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아
+                    아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아
+                    아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아
+                    집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다
+                    집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다
+                    집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다
+                    집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다
+                    집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다
+                    집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다
+                    집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다집가고싶다
                 </p>
                 <ul>
-                    <li></li>
+                    <li>
+                        <img src="img2.png" />
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>onsectetur adipisicing elit, sedo eiusmod tempor 
+                                incidi et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="img3.png" />
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>onsectetur adipisicing elit, sedo eiusmod tempor 
+                                incidi et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="img4.png" />
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>onsectetur adipisicing elit, sedo eiusmod tempor 
+                                incidi et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="img5.png" />
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>onsectetur adipisicing elit, sedo eiusmod tempor 
+                                incidi et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
                 </ul>
             </section>
-            <section>content2</section>
+            <section id="content2">
+                <h3>MY WORK</h3>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                sed do eiusmod tempor <br /> incididunt ut labore et dolore magna 
+                aliqua.
+                </p>
+                <ul>
+                    <li><img src="img6.png"></li>
+                    <li><img src="img7.png"></li>
+                    <li><img src="img8.png"></li>
+                    <li><img src="img9.png"></li>
+                    <li><img src="img10.png"></li>
+                    <li><img src="img11.png"></li>
+                    <li><img src="img12.png"></li>
+                    <li><img src="img13.png"></li>
+                </ul>
+            </section>
         </div>
     </body>
 </html>
