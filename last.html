@@ -3,6 +3,11 @@
     <head>
         <title>기말평가-포트폴리오,자유주제</title>
         <style>
+            #wrap{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin: 0px auto;
+            }
             body{
                 color: brown;
                 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
@@ -22,6 +27,14 @@
                 padding: 0px 10px; /*상하 좌우*/
                 border-right: solid 1px brown;
             }
+
+            header a:link{ color:brown; }
+            header a:visited{ color:brown; }
+            header a:hover{ color:brown; }
+            header a:active{ color: brown; }
+            header a:focus{ color: brown; }
+            header a{ text-decoration: none;}
+
             header li:nth-child(1):hover{
                 font-weight: bold;
             }
@@ -32,6 +45,12 @@
                 font-weight: bold;
             }
             header li:nth-child(4):hover{
+                font-weight: bold;
+            }
+            header li:nth-child(5):hover{
+                font-weight: bold;
+            }
+            header li:nth-child(6):hover{
                 font-weight: bold;
             }
             header li:last-child{
@@ -65,42 +84,146 @@
             section{
                 text-align: center;
             }
+            section p{
+                font-size: 20px;
+            }
             section h3{
                 padding: 50px 0px 0px 0px;
                 color: rgb(235, 152, 0);
                 font-size: 35px;
             }
-           
+            #content1{
+                padding: 30px;
+            }
+            #content1 ul{
+                display: flex;
+                list-style: none;
+                padding: 0px;
+                justify-content: stretch;
+                margin-top: 100px;
+            }
+            #content1 li{
+                border-right: solid 1px lightgray;
+                padding: 40px;
+            }
+            #content1 li:last-child{
+                border: none;
+            }
+            #content1 dt{
+                font-size: 19px;
+                font-weight: bold;
+                margin: 20px;
+            }
+            #content1 dd{
+                margin: 0px;
+            }
+            #content2{
+                margin-top: 150px;
+            }
+            #content2 ul{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                list-style: none;
+                padding: 0px;
+                margin-top: 100px;
+            }
+            #content2 li{
+                width: 20%; 
+            }
+            #content2 img{
+                width: 100%;
+                display: block;
+            }
+            #content2 p{
+                padding: 40px;
+            }
         </style>
 
     </head>
     <body>
-        <header>
-            <h1>GYURIN'S PORTPOLIO</h1>
-            <ul>
-                <li>INDEX</li>
-                <li>SUB</li>
-                <li>LAYOUT1</li>
-                <li>LAYOUT2</li>
-                <li>HOME</li>
-            </ul>
+        <div id="wrap">
+            <header>
+                <h1>GYURIN'S PORTPOLIO</h1>
+                <ul>
+                    <li><a href="index.html" target="_blank" title="INDEX">INDEX</a></li>
+                    <li><a href="html.html" target="_blank" title="HTML">HTML</a></li>
+                    <li><a href="sub.html" target="_blank" title="SUB">SUB</a></li>
+                    <li><a href="css.html" target="_blank" title="CSS">CSS</a></li>
+                    <li><a href="layout1/layout1.html" target="_blank" title="LAYOUT1">LAYOUT1</a></li>
+                    <li><a href="layout2/layout2.html" target="_blank" title="LAYOUT2">LAYOUT2</a></li>
+                    <li><a href="layout3/layout3.html" target="_blank" title="LAYOUT3">LAYOUT3</a></li>
+                </ul>
 
-        </header>
+            </header>
 
-        <div id="dl">
-            <p>권규린의</p>    
-            <h2>포트폴리오</h2>
-            <p>이자 직무수행능력평가1 모음집</p>
+            <div id="dl">
+                <p>권규린의</p>    
+                <h2>포트폴리오</h2>
+                <p>이자 직무수행능력평가1 모음집</p>
+            </div>
+            <section id="content1">
+                <h3>INDEX</h3>
+                <p>
+                    권규린의 포트폴리오이자 직무수행능력평가1 모음집입니다.
+                </p>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>콘텐츠디자인</dt>
+                            <dd>이집트의 벽화를 주제로 웹사이트 제작</dd>
+                        </dl>
+                    </li>
+
+                    <li>
+                        <dl>
+                            <dt>콘텐츠기획</dt>
+                            <dd>계원예술대학교 웹사이트 메인화면 리뉴얼</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>모션그래픽</dt>
+                            <dd>케이크의 입장으로 보는 베이킹 영상</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>3D디자인</dt>
+                            <dd>꿈속에서 돌아다닐 수 있는 놀이공원</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>개인작</dt>
+                            <dd>과제를 떠나 개인적으로 그린 일러스트들</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="content2">
+                <h3>콘텐츠 디자인</h3>
+                <p>
+                    콘텐츠 디자인에서 화폐를 주제로 각각 본인이 맡을 나라를 선정하였다. 나는 이집트가 나와 이집트의 화폐를 이용하여 "벽화"라는 키워드를 선정하였고, 고대 이집트 신들을 소개하는 사이트를 제작하기로 하였다.
+                </p>
+                <ul>
+                    <li><img src="image/1023_06_직무수행능력평가 1_22361007_권규린2.jpg"/></li>
+                    <li><img src="image/아툼.jpg"/></li>
+                    <li><img src="image/오시리스.jpg"/></li>
+                    <li><img src="image/호루스.jpg"/></li>
+                    <li><img src="image/아누비스.jpg"/></li>
+                    <li><img src="image/1023_06_직무수행능력평가 1_22361007_권규린3.jpg"></li>
+                    <li><img src="image/아툼1.jpg"></li>
+                    <li><img src="image/오시리스1.jpg"></li>
+                    <li><img src="image/호루스1.jpg"></li>
+                    <li><img src="image/아누비스1.jpg"></li>
+                </ul>
+            </section>
+
+            <footer>
+
+            </footer>
         </div>
-        <section>
-            <h3>INDEX</h3>
-            <p>
-                권규린의 포트폴리오이자 직무수행능력평가1 모음집입니다.
-            </p>
-        </section>
-
-        <footer>
-
-        </footer>
     </body>
 </html>
