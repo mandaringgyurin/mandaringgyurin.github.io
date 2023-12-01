@@ -25,7 +25,10 @@
                 border-top: solid 1px black;
             }
             #content{
-             display: flex;   
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
             }
             .content_card{
                 width: 310px;
@@ -66,6 +69,14 @@
             }
             .content_card p{
                 margin: 0px;
+            }
+            footer ul{
+                display: flex;
+                list-style: none;
+                padding: 0px;
+            }
+            footer li{
+                padding-right: 20px;
             }
         </style>
     </head>
@@ -316,7 +327,15 @@
                 </section>
             </div>
             <footer>
-                footer
+                <div class="short_line"></div>
+                <ul>
+                    <li><img src="img12.png"/></li>
+                    <li><img src="img13.png"/></li>
+                    <li><img src="img14.png"/></li>
+                    <li><img src="img15.png"/></li>
+                </ul>
+                <div class="short_line"></div>
+                <p>copyright</p>
             </footer>
         </div>
     </body>
