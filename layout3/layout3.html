@@ -3,8 +3,321 @@
     <head>
         <title>layout3</title>
         <meta charset="utf-8"/>
+        <style>
+           body{
+            background-image: url("background.png");
+           }
+            header h1{
+                font-size: 50px;
+            }
+            header ul{
+                display: flex;
+                list-style: none;
+                padding: 0px;
+                font-size: 12px;
+            }
+            header li{
+                padding: 0px;
+                padding-right: 20px;
+            }
+            .short_line{
+                width: 30px;
+                border-top: solid 1px black;
+            }
+            #content{
+             display: flex;   
+            }
+            .content_card{
+                width: 310px;
+                background-color: white;
+                box-shadow: 2px 2px 2px gray;
+                /*가로 위치, 세로 위치, 번짐 정도, 그림자 색상*/
+                margin: 20px;
+            }
+            .category{
+                position: absolute; /*위치 지정 방식: 절대적임*/
+                /* top bottom left right*/
+                left: 0px;
+                bottom: 0px;
+                background-color: black;
+                color: white;
+                padding: 5px 15px;
+            }
+            .content_card>div:first-child{
+                position: relative;
+                /*relative 부모는 absolut 자식의 기준이 된다.*/
+            }
+            .content_card img{
+                display: block;
+            }
+            .content_card>div:last-child{
+                padding: 25px;
+            }
+            .content_card h2{
+                margin-top: 0px;
+            }
+            .content_card>div>div:nth-child(2){
+                color: gray;
+            }
+            .long_line{
+                width: 250px;
+                border-top: dotted 1px gray;
+                margin: 10px 0px;
+            }
+            .content_card p{
+                margin: 0px;
+            }
+        </style>
     </head>
     <body>
-
+        <div id="wrap">
+            <header>
+                <h1>Gridly.</h1>
+                <div class="short_line"></div>
+                <ul>
+                    <li>home</li>
+                    <li>digital designs</li>
+                    <li>web designs</li>
+                    <li>branding/identity</li>
+                </ul>
+                <div class="short_line"></div>
+            </header>
+            <div id="content">
+                <section class="content_card">
+                    <div>
+                        <img src="img1.png" />
+                        <div class="category">photoshop, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>1st December 2023</div>
+                        <div class="long_line"></div>
+                        <p>
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img2.png" />
+                        <div class="category">photoshop, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>1st December 2023</div>
+                        <div class="long_line"></div>
+                        <p>
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img3.png" />
+                        <div class="category">photoshop, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>1st December 2023</div>
+                        <div class="long_line"></div>
+                        <p>
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img4.png" />
+                        <div class="category">photoshop, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>1st December 2023</div>
+                        <div class="long_line"></div>
+                        <p>
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img5.png" />
+                        <div class="category">photoshop, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>1st December 2023</div>
+                        <div class="long_line"></div>
+                        <p>
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img6.png" />
+                        <div class="category">photoshop, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>1st December 2023</div>
+                        <div class="long_line"></div>
+                        <p>
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img7.png" />
+                        <div class="category">photoshop, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>1st December 2023</div>
+                        <div class="long_line"></div>
+                        <p>
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img8.png" />
+                        <div class="category">photoshop, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>1st December 2023</div>
+                        <div class="long_line"></div>
+                        <p>
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img9.png" />
+                        <div class="category">photoshop, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>1st December 2023</div>
+                        <div class="long_line"></div>
+                        <p>
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img10.png" />
+                        <div class="category">photoshop, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>1st December 2023</div>
+                        <div class="long_line"></div>
+                        <p>
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="img11.png" />
+                        <div class="category">photoshop, design</div>
+                    </div>
+                    <div>
+                        <h2>Dulux Colour Awards</h2>
+                        <div>1st December 2023</div>
+                        <div class="long_line"></div>
+                        <p>
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                            집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다 집에 가고 싶다
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                footer
+            </footer>
+        </div>
     </body>
 </html>
