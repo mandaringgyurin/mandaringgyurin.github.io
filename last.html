@@ -10,7 +10,7 @@
             }
             body{
                 color: rgb(165, 97, 42);
-                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+                font-family: Arial, Helvetica, sans-serif;
                 background-color: rgb(255, 255, 245);
             }
             header {
@@ -176,6 +176,58 @@
             }
             .card p{
                 margin: 0px;
+            }
+            footer ul{
+                list-style: none;
+                display: flex;
+                padding: 0px;
+            }
+            footer li{
+                padding: 0px 10px;
+            }
+            footer div:first-child li{
+                border-right: solid 1px lightgray;
+            }
+            footer div:first-child li:last-child{
+                border: none;
+            }
+            footer{
+               display: flex;
+               justify-content: space-between;
+               background-color: rgb(255, 247, 222);
+               color: rgb(165, 97, 42);
+               padding: 50px;
+            }
+            footer a:link{ color:brown; }
+            footer a:visited{ color:brown; }
+            footer a:hover{ color:brown; }
+            footer a:active{ color: brown; }
+            footer a:focus{ color: brown; }
+            footer a{ text-decoration: none;}
+
+            footer li:nth-child(1):hover{
+                font-weight: bold;
+            }
+            footer li:nth-child(2):hover{
+                font-weight: bold;
+            }
+            footer li:nth-child(3):hover{
+                font-weight: bold;
+            }
+            footer li:nth-child(4):hover{
+                font-weight: bold;
+            }
+            footer li:nth-child(5):hover{
+                font-weight: bold;
+            }
+            footer li:nth-child(6):hover{
+                font-weight: bold;
+            }
+            footer li:last-child{
+                border: none
+            }
+            footer li:last-child:hover{
+                font-weight: bold;
             }
         </style>
 
@@ -377,8 +429,18 @@
                     <div>25th September 2023</div>
             </section>
             </div>
-            <footer>
 
+            <footer>
+                <div>
+                    <ul>
+                        <li><a href="index.html" target="_blank" title="INDEX">INDEX</a></li>
+                        <li><a href="html.html" target="_blank" title="HTML">HTML</a></li>
+                        <li><a href="sub.html" target="_blank" title="SUB">SUB</a></li>
+                        <li><a href="css.html" target="_blank" title="CSS">CSS</a></li>
+                        <li><a href="layout1/layout1.html" target="_blank" title="LAYOUT1">LAYOUT1</a></li>
+                        <li><a href="layout2/layout2.html" target="_blank" title="LAYOUT2">LAYOUT2</a></li>
+                        <li><a href="layout3/layout3.html" target="_blank" title="LAYOUT3">LAYOUT3</a></li>
+                    </ul>
             </footer>
         </div>
     </body>
